@@ -19,11 +19,11 @@ function launch_wx(){
 function launch_qq(){
     const options = {
         scheme: {
-            protocol: 'mqqapi',
+            protocol: 'mqq',
         },
         intent: {
             package: 'com.tencent.mobileqq',
-            scheme: 'mqqapi',
+            scheme: 'mqq',
         },
         fallback: 'https://im.qq.com/immobile/index.html',
         timeout: 5000,
