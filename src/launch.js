@@ -1,13 +1,13 @@
-function launch_xt(){
+function launch_wx(){
     const options = {
         scheme: {
-            protocol: 'mdk_a93fa72de5ec0c06',
+            protocol: 'weixin',
         },
         intent: {
-            package: 'com.miHoYo.hkrpg',
-            scheme: 'mdk_a93fa72de5ec0c06',
+            package: 'com.tencent.mm',
+            scheme: 'weixin',
         },
-        fallback: 'https://sr.mihoyo.com/',
+        fallback: 'https://weixin.qq.com/',
         timeout: 5000,
     };
     const callLib = new CallApp(options);
