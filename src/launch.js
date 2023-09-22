@@ -51,3 +51,21 @@ function launch_fq(){
         path: '',
     });
 };
+
+function launch_bilibili(){
+    const options = {
+        scheme: {
+            protocol: 'bilibili',
+        },
+        intent: {
+            package: 'tv.danmaku.bili',
+            scheme: 'bilibili',
+        },
+        fallback: 'https://www.bilibili.com/',
+        timeout: 5000,
+    };
+    const callLib = new CallApp(options);
+    callLib.open({
+        path: '',
+    });
+};
