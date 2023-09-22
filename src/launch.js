@@ -56,16 +56,13 @@ function launch_bilibili(){
     const options = {
         scheme: {
             protocol: 'bilibili',
-        },
-        intent: {
-            package: 'tv.danmaku.bili',
-            scheme: 'bilibili',
+            host: 'video',
         },
         fallback: 'https://www.bilibili.com/',
         timeout: 5000,
     };
     const callLib = new CallApp(options);
     callLib.open({
-        path: '',
+        path: 'video',
     });
 };
