@@ -33,3 +33,21 @@ function launch_qq(){
         path: '',
     });
 };
+
+function launch_fq(){
+    const options = {
+        scheme: {
+            protocol: 'dragon1967',
+        },
+        intent: {
+            package: 'com.dragon.read',
+            scheme: 'dragon1967',
+        },
+        fallback: 'https://fanqienovel.com/',
+        timeout: 5000,
+    };
+    const callLib = new CallApp(options);
+    callLib.open({
+        path: '',
+    });
+};
